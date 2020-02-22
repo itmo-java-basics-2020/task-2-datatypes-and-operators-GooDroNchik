@@ -59,7 +59,8 @@ public class Task2 {
      * Даны два вещественных числа. Определите равны ли они
      */
     boolean areRealNumbersEqual(double a, double b) {
-        if (Double.compare(a, b) == 0){
+
+        if (Math.abs(a-b) < 10e-11){
             return true;
         } else{
             return false;
